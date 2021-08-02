@@ -38,5 +38,6 @@
         <p>Graphic Design</p>
     </div>
 </div>
+@include('projects.projects')
 
 @endsection
