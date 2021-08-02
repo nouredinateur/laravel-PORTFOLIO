@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5	rounded-b-lg">
+        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5 hover:w-1/5	rounded-b-lg">
             <img src="{{ asset('img/project.png') }}" alt="">
             <div class="h-max p-4	">
                 <p class="font-semibold	">Landing page</p>

@@ -17,8 +17,8 @@
         </div>
         <div class="p-5 mr-16">
             <ul class="flex items-center">
-                <li class=""><a class="p-6 text-orange" href="">Home</a></li>
-                <li><a class="p-6" href="">Blog</a></li>
+                <li class=""><a class="p-6 text-orange" href="/">Home</a></li>
+                <li><a class="p-6" href=" {{ route('blog') }}">Blog</a></li>
                 <li><a class="p-6" href="">Contact</a></li>
             </ul>
         </div>
