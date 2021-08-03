@@ -1,6 +1,6 @@
 <div class="mt-16">
     <div class="w-6/12	 mx-auto">
-        <h4 class="font-mermelad">Navigate through the recent articles</h4>
+        <h4 class="font-mermelad font-semibold text-xl">Navigate through the recent articles</h4>
     </div>
     <div class="mt-16 h-screen w-full">
         <div class="w-3/5 h-5/6	mx-auto		shadow">
