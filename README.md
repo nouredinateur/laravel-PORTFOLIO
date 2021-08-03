@@ -1,12 +1,12 @@
 UNDER CONSTRUCTION
 
 Done:
-    front-end:
-    Home
-    Blog
-    back-end:
+    front-end:<br>
+    Home<br>
+    Blog<br>
+    back-end:<br>
     projects
-    
+<br>
 Doing:
     Blog backend
     
