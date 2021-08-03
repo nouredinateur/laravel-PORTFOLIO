@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
+    public $table = 'project';
     use HasFactory;
     protected $fillable = [
         'title',

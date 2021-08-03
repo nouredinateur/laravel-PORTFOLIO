@@ -11,7 +11,20 @@
                 </div>
             </div>
         </div>
-        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5 hover:w-1/5	rounded-b-lg">
+        @if ($projects->count())
+        @foreach ($projects as $project)
+        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5	rounded-b-lg">
+            <img class="h-64	" src="{{ $project->image }}" alt="">
+            <div class="h-max p-4	">
+                <p class="font-semibold	">{{ $project->title}}</p>
+                <div class="w-max p-2 my-2 text-white rounded-2xl bg-darkblue shadow">
+                    <p>{{ $project->type }}</p>
+                </div>
+            </div>
+        </div>
+        @endforeach
+        @endif
+        {{-- <div class=" mx-14 my-14 shadow-lg box-border	w-4/5 hover:w-1/5	rounded-b-lg">
             <img src="{{ asset('img/project.png') }}" alt="">
             <div class="h-max p-4	">
                 <p class="font-semibold	">Landing page</p>
@@ -55,7 +68,7 @@
                     <p>School Project</p>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
       
 </div>
