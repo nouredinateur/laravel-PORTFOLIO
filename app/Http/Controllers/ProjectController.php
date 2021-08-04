@@ -8,7 +8,10 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
     public function index() {
-        return view('crud');
+        $projects = Project::get();
+        return view('crud' ,[
+            'projects' => $projects,
+        ]);
     }
     public function home(){
         $projects = Project::latest()->paginate(6);
@@ -17,6 +20,7 @@ class ProjectController extends Controller
         ]);
     }
     public function crud(Request $request){
+
         $this->validate($request, [
             "title" => "required",
             "image" => "required",
@@ -43,4 +47,8 @@ class ProjectController extends Controller
 
         ]);
     }
+    public function destroy($id) {
+       $project = Project::find($id);
+       $project->delete();
+     }
 }

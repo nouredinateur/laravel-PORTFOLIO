@@ -19,6 +19,8 @@
         <lottie-player class="w-full mx-20" src="{{ asset('img/PRODUCT/Animation 09/drawkit-grape-animation-9-LOOP.json') }}" background="transparent"  speed="1" loop  autoplay></lottie-player>
     </div>
 </div>
+<div class="h-40"></div>
+
 <script>
 
 var images = [

@@ -26,7 +26,7 @@
 
     @yield('content')
     
-    <footer class="w-full mt-40 bg-black h-52"> 
+    <footer class="w-full bg-black h-52"> 
         <div class="h-full flex justify-between">
             <div class="h-full pt-8 pl-8" >
                 <img class="h-4/5"src="{{ asset('img/logo.png') }}" alt="Logo ilustration of me">
