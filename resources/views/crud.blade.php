@@ -24,7 +24,7 @@
     </form>
     <div class="w-full max-h-full	 mt-24">
         <table class="table-fixed mx-auto rounded-md text-white">
-            <thead class="bg-orange text-grey h-16 ">
+            <thead class="bg-orange text-grey h-14 rounded-lg">
               <tr>
                 <th class="w-1/12">ID</th>
                 <th class="w-2/12">Title</th>
@@ -44,7 +44,8 @@
                 <td>{{ $project->link }}</td>
                 <td>{{ $project->type }}</td>
                 <td>
-                  <a href="delete/{{ $project->id  }}">delete</a>
+                  <a class="w-max p-4 bg-grey text-black rounded-md shadow-md" href="delete/{{ $project->id  }}">Delete</a>
+                  <a class="w-max p-4 bg-orange text-white rounded-md shadow-md" href="delete/{{ $project->id  }}">Update</a>
                 </td>
               </tr>
               @endforeach

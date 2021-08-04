@@ -44,11 +44,13 @@ class ProjectController extends Controller
             "image" => 'storage/image/' . $fileNameToStore,
             "link"=> $request->link,
             "type"=> $request->type,
-
+            
         ]);
+        return redirect('/crud');
     }
     public function destroy($id) {
        $project = Project::find($id);
        $project->delete();
+        return redirect('/crud');
      }
 }

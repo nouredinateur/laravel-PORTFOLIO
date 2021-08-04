@@ -17,3 +17,5 @@ Route::get('/', [ProjectController::class, 'home'])->name('home');
 Route::get('/crud', [ProjectController::class, 'index'])->name('index');
 
 Route::post('/crud', [ProjectController::class, 'crud'])->name('crud');
+
+Route::get('delete/{id}', [ProjectController::class, 'destroy'])->name('destroy');
