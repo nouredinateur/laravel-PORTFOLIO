@@ -45,7 +45,7 @@
                 <td>{{ $project->type }}</td>
                 <td>
                   <a class="w-max p-4 bg-grey text-black rounded-md shadow-md" href="delete/{{ $project->id  }}">Delete</a>
-                  <a class="w-max p-4 bg-orange text-white rounded-md shadow-md" href="delete/{{ $project->id  }}">Update</a>
+                  <a class="w-max p-4 bg-orange text-white rounded-md shadow-md" href="edit/{{ $project->id  }}">Update</a>
                 </td>
               </tr>
               @endforeach

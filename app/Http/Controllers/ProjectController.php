@@ -63,11 +63,11 @@ class ProjectController extends Controller
     {
     $project = Project::find($id);
 
-    return view('projects.projectUpdate',compact('project'));
+    return view('projects.update',compact('project'));
     }
 
 
-    public function update(Request $request,$id) {
+    public function update(Request $request,Project $project ,$id) {
 
         $project = Project::find($id);
         
@@ -77,7 +77,23 @@ class ProjectController extends Controller
             "link"=> "required",
             "type" => "required"
         ]);
-        $project->update($request->all());
+        $project->title = $request->title;
+        if ($request->hasFile('image')) {
+            $filenameWithExt = $request->file('image')->getClientOriginalName ();
+            // Get Filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just Extension
+            $extension = $request->file('image')->getClientOriginalExtension();
+            // Filename To store
+            $fileNameToStore =  time().'.'.$extension;
+            $path = $request->file('image')->storeAs('public/image', $fileNameToStore);
+        }
+        
+        $project->image = 'storage/image/' . $fileNameToStore;
+        $project->link = $request->link;
+        $project->type = $request->type;
+        $project->save(); 
+        // $project->update($request->all());
         return redirect('/crud');
     }
 }
