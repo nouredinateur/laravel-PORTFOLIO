@@ -37,7 +37,7 @@ class RegisterController extends Controller
             $fileNameToStore =  time().'.'.$extension;
             $path = $request->file('image')->storeAs('public/image', $fileNameToStore);
         }  else{
-            $fileNameToStore = 'noimage.png';
+            $fileNameToStore = 'avatar.svg';
         };
 
        User::create([
