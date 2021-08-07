@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-darkblue p-16 flex justify-center">
         <div class="w-4/12 bg-white p-6 rounded-lg">
-        <form action="{{route('register')}}" method="post">
+        <form action="{{route('save')}}" method="post">
             @csrf
             <div class="p-4">
                 <div class="rounded-full">
@@ -16,7 +16,7 @@
                         <polyline points="9 15 12 12 15 15" />
                         <line x1="12" y1="12" x2="12" y2="21" />
                       </svg>
-                    <input name="avatar" onchange="loadFile(event)" type="file" hidden >
+                    <input name="image" onchange="loadFile(event)" type="file" hidden >
                    
                     <p>Upload Avatar</p>
                 </label>
@@ -68,7 +68,7 @@
             <div class="mb-4">
                 <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Your Password" id="" 
-                class="bg-gray-100 border-2 w-full p-4 rounded-lg  @error('password') border-red-500 @enderror" value="" >
+                class="bg-gray-100 border-2 w-full p-4 rounded-lg  @error('password') border-red-500 @enderror">
                 @error('password')
                     <div class="text-red-500 mt-2 text-sm">
                         {{ $message }}
@@ -77,7 +77,7 @@
             </div>
             
             <div>
-                <button type="submit" class="bg-darkblue text-white px-4 py-3 rounded font-medium w-full" >Register</button>
+                <button type="submit" class="bg-darkblue text-white px-4 py-3 rounded font-medium w-full" >Register </button>
             </div>
         </form>
         </div>
