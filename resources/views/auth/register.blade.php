@@ -6,8 +6,8 @@
         <form action="{{route('save')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="p-4">
-                <div class="rounded-full">
-                    <img class=" rounded-full w-3/5 mx-auto shadow-lg" id="output" src="{{ asset('img/avatar.svg') }}" alt=""/>
+                <div class=" h-6/12">
+                    <img class=" rounded-full w-3/5 h-2/5 mx-auto shadow-lg" id="output" src="{{ asset('img/avatar.svg') }}" alt=""/>
                 </div>
                 <label >
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -16,7 +16,7 @@
                         <polyline points="9 15 12 12 15 15" />
                         <line x1="12" y1="12" x2="12" y2="21" />
                       </svg>
-                    <input name="image" onchange="loadFile(event)" type="file"  @error('image') border-red-500 @enderror" value="{{ old('image') }} hidden >
+                    <input name="image" onchange="loadFile(event)" type="file"  @error('image') border-red-500 @enderror" value="{{ old('image') }}" hidden >
                    
                     <p>Upload Avatar</p>
                 </label>

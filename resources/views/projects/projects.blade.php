@@ -15,54 +15,11 @@
             </div>
         </div>
         @endforeach
-        @endif
-        {{-- <div class=" mx-14 my-14 shadow-lg box-border	w-4/5 hover:w-1/5	rounded-b-lg">
-            <img src="{{ asset('img/project.png') }}" alt="">
-            <div class="h-max p-4	">
-                <p class="font-semibold	">Landing page</p>
-                <div class="w-max p-2 my-2 text-white rounded-2xl bg-darkblue shadow">
-                    <p>School Project</p>
-                </div>
-            </div>
-        </div>
-        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5	rounded-b-lg">
-            <img src="{{ asset('img/project.png') }}" alt="">
-            <div class="h-max p-4	">
-                <p class="font-semibold	">Landing page</p>
-                <div class="w-max p-2 my-2 text-white rounded-2xl bg-orange shadow">
-                    <p>Side Project</p>
-                </div>
-            </div>
-        </div>
-        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5	rounded-b-lg">
-            <img src="{{ asset('img/project.png') }}" alt="">
-            <div class="h-max p-4	">
-                <p class="font-semibold	">Landing page</p>
-                <div class="w-max p-2 my-2 text-orange rounded-2xl bg-black">
-                    <p>Freelance</p>
-                </div>
-            </div>
-        </div>
-        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5	rounded-b-lg">
-            <img src="{{ asset('img/project.png') }}" alt="">
-            <div class="h-max p-4	">
-                <p class="font-semibold	">Landing page</p>
-                <div class="w-max p-2 my-2 text-white rounded-2xl bg-orange">
-                    <p>Side Project</p>
-                </div>
-            </div>
-        </div>
-        <div class=" mx-14 my-14 shadow-lg box-border	w-4/5	rounded-b-lg">
-            <img src="{{ asset('img/project.png') }}" alt="">
-            <div class="h-max p-4	">
-                <p class="font-semibold	">Landing page</p>
-                <div class="w-max p-2 my-2 text-white rounded-2xl bg-darkblue">
-                    <p>School Project</p>
-                </div>
-            </div>
-        </div> --}}
     </div>
-      
-</div>
-
+    @else
+</div>   
+<div class="p-24 mx-auto my-36 shadow-lg box-border	w-8/12	rounded-b-lg">
+    <p>There is no projects listed yet</p>
+</div> 
+@endif
 <div class="h-40"></div>

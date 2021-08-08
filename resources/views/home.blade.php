@@ -4,13 +4,22 @@
 @section('content')
 
 <div class="flex align-center mx-20	 ">
-    <div class="leading-8	">
-        <div class="mt-96">
+    <div class="leading-8 w-6/12">
+        <div class=" mt-14 w-40 shadow-lg">
+            <img src="{{ $user->image }}" alt="">
+        </div>
+        <div class="mt-14 ">
             <p class="font-Sintony text-4xl leading-14 motion-safe:animate-bounce">I'm</p>
-            <h1 class="font-mermelad font-black	text-7xl tracking-wide ">NOUREDDINE<br>NAFZAOUI</h1>
-            <p class="font-oldenburg text-xl mt-8 leading-8">aka nnafzaoui/Mmusashii, a full stack web developer
+            <h1 class="uppercase  font-mermelad font-black	text-7xl tracking-wide ">
+                {{ $user->name }}
+            </h1>
+                {{-- NOUREDDINE<br>NAFZAOUI</h1> --}}
+            <p class=" font-oldenburg text-xl mt-8 leading-8">
+                {{ $user->description }}
+                {{-- aka nnafzaoui/Mmusashii, a full stack web developer
                 in love with technologie since birth<br>
-                Youcode Student</p>
+                Youcode Student --}}
+            </p>
         </div>
         <div class="mt-12">
             <a href=""> <button  class="w-44 h-16 mr-8 bg-orange text-white rounded-xl shadow-xl">Resume</button></a>

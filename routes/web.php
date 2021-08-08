@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
-
+use App\Http\Controllers\PortfoliosController;
 
 // Route::get('/', function () {
 //      return view('home');
@@ -34,3 +35,9 @@ Route::post('/register', [RegisterController::class, 'store'])->name('save');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
+
+Route::resources([
+     'profile' => ProfileController::class,
+ ]);
+
+Route::get('{username}', [PortfoliosController::class, 'index']);

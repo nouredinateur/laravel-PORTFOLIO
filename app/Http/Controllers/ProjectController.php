@@ -41,7 +41,7 @@ class ProjectController extends Controller
 
 
         Project::create([
-
+            "user_id" => auth()->user()->id,
             "title" => $request->title,
             "image" => 'storage/image/' . $fileNameToStore,
             "link"=> $request->link,

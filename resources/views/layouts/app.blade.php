@@ -18,7 +18,7 @@
         <div class="p-5 mr-16">
             <ul class="flex items-center">
                 <li class=""><a class="p-6 text-orange" href="/">Home</a></li>
-                <li><a class="p-6" href=" {{ route('blog') }}">Blog</a></li>
+                <li><a class="p-6" href=" {{ route('blog') }}">Profile</a></li>
                 <li><a class="p-6" href="">Contact</a></li>
             </ul>
         </div>
@@ -34,7 +34,7 @@
             <div class=" my-24 text-white">
                 <ul class="flex items-center">
                     <li class=""><a class="p-6"  href="">Home</a></li>
-                    <li><a class="p-6" href="">Blog</a></li>
+                    <li><a class="p-6" href="">Profile</a></li>
                     <li><a class="p-6" href="">Contact</a></li>
                 </ul>
             </div>

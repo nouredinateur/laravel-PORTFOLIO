@@ -44,9 +44,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    // public function role($role) {     
-    //     $role = (array)$role;    
-      
-    //     return in_array($this->role, $role); 
-    //  }
+    public function projects()
+    {
+        return $this->hasMany(Project::class);
+    }
 }
