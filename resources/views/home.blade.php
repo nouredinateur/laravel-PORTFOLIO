@@ -3,50 +3,27 @@
 
 @section('content')
 
-<div class="flex align-center mx-20	 ">
+<div class=" z-10 flex align-center mx-20	 ">
+    
     <div class="leading-8 w-6/12">
-        <div class=" mt-14 w-40 shadow-lg">
-            <img src="{{ $user->image }}" alt="">
+       
+        <div class="mt-24 ">
+            <p>portfolios for developers</p>
+            <h1>POORTFOLIO</h1>
+            <P>Welcome to POORTFOLIO <br>
+            
+            
+            </P>
         </div>
-        <div class="mt-14 ">
-            <p class="font-Sintony text-4xl leading-14 motion-safe:animate-bounce">I'm</p>
-            <h1 class="uppercase  font-mermelad font-black	text-7xl tracking-wide ">
-                {{ $user->name }}
-            </h1>
-                {{-- NOUREDDINE<br>NAFZAOUI</h1> --}}
-            <p class=" font-oldenburg text-xl mt-8 leading-8">
-                {{ $user->description }}
-                {{-- aka nnafzaoui/Mmusashii, a full stack web developer
-                in love with technologie since birth<br>
-                Youcode Student --}}
-            </p>
-        </div>
-        <div class="mt-12">
-            <a href=""> <button  class="w-44 h-16 mr-8 bg-orange text-white rounded-xl shadow-xl">Resume</button></a>
-            <a href=""><button  class="w-44 h-16 bg-darkblue text-white rounded-xl shadow-xl ">Get in Touch</button></a>
-           
-        </div>
+      
     </div>
     <div class="">
         {{-- <img class="w-9/12 mx-20" src="{{ asset('img/undrawMainImage.png') }}" alt=""> --}}
-        <lottie-player class="w-full mx-20" src="{{ asset('img/PRODUCT/Animation 02/drawkit-grape-animation-2-LOOP.json') }}" background="transparent"  speed="1" loop  autoplay></lottie-player>
+        <lottie-player class="w-full mx-20" src="{{ asset('img/PRODUCT/Animation 09/drawkit-grape-animation-9-LOOP.json') }}" background="transparent"  speed="1" loop  autoplay></lottie-player>
 
     </div>
 </div>
-<div class="flex justify-around p-16">
-    <div class="text-center">
-        <img class="w-60 mb-4" src="{{ asset('img/fswd.png') }}" alt="illustration">
-        <p>full stack web devlopment</p>
-    </div>
-    <div class="text-center">
-        <img class="w-60 mb-4" src="{{ asset('img/ux.png') }}" alt="illustration">
-        <p>UI/UX Design</p>
-    </div>
-    <div class="text-center" >
-        <img class="w-60 mb-4" src="{{ asset('img/gd.png') }}" alt="illustration">
-        <p>Graphic Design</p>
-    </div>
+<div class="z-0	-mt-28">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#14213D" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,58.7C480,21,600,11,720,58.7C840,107,960,213,1080,245.3C1200,277,1320,235,1380,213.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 </div>
-@include('projects.projects')
-
 @endsection

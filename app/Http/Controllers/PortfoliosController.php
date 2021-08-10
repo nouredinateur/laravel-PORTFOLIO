@@ -13,7 +13,7 @@ class PortfoliosController extends Controller
         $user = User::whereUsername($username)->firstOrFail();
         $projects = User::whereUsername($username)->firstOrFail()->projects;
         // dd($projects);
-        return view('home', [
+        return view('profile', [
             'projects' => $projects,
             'user' => $user,
         ]);
